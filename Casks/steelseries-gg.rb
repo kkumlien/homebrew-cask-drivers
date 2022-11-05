@@ -9,8 +9,8 @@ cask "steelseries-gg" do
   homepage "https://steelseries.com/gg"
 
   livecheck do
-    url "https://techblog.steelseries.com"
-    regex(/GG[._-]notes[._-]v?(\d+(?:\.\d+)+)\.html/i)
+    url "https://steelseries.com/gg/downloads/gg/latest/darwin"
+    strategy :header_match
   end
 
   auto_updates true
